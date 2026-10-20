@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Secure Messenger · закрытое Alpha-тестирование</title>
+  <meta name="description" content="Мессенджер учебного заведения со сквозным шифрованием. Закрытое Alpha-тестирование по приглашениям.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="mark" aria-hidden="true"></span>Secure Messenger <em>Education</em></div>
+    <span class="tag">Alpha 0.8.1 · по приглашениям</span>
+  </header>
+
+  <main>
+    <section class="pn hero">
+      <div class="lab"><b>00</b>/ alpha-тест</div>
+      <h1>Переписка учебного заведения, <span>которую никто, кроме вас, не прочтёт</span></h1>
+      <p>Secure Messenger — мессенджер для колледжа: чаты, группы, сообщества, звонки, учебные задания и расписание. Сообщения и файлы шифруются на вашем устройстве, сервер хранит только шифротекст.</p>
+      <div class="cta">
+        <a class="btn" href="https://github.com/Raphin-server/secure-messenger-alpha/releases/latest/download/Secure.Messenger_0.8.1_x64-setup.exe">Скачать для Windows</a>
+        <a class="btn ghost" href="https://github.com/Raphin-server/secure-messenger-alpha/releases/latest">Все установщики (macOS, Linux)</a>
+      </div>
+      <p class="note">Тест закрытый: войти можно только по личному ключу-приглашению. Ключ выдаёт администратор.</p>
+    </section>
+
+    <section class="pn">
+      <div class="lab"><b>01</b>/ как начать</div>
+      <h2>Три шага</h2>
+      <ol class="steps">
+        <li>
+          <b>Установите приложение</b>
+          <p>Скачайте <code>Secure.Messenger_0.8.1_x64-setup.exe</code> со страницы релиза и запустите. Установщик пока без цифровой подписи, поэтому Windows может показать окно SmartScreen: нажмите «Подробнее» → «Выполнить в любом случае».</p>
+        </li>
+        <li>
+          <b>Откройте вкладку «Регистрация по ключу»</b>
+          <p>Адрес сервера уже встроен в приложение, ничего настраивать не нужно. Введите ключ вида <code>SM-XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX</code>, придумайте имя пользователя (латиница, цифры, <code>_ . -</code>) и пароль от 8 символов.</p>
+        </li>
+        <li>
+          <b>Войдите и пользуйтесь</b>
+          <p>Ключи шифрования создаются на вашем устройстве. Сохраните код восстановления, который приложение предложит записать: без него переписку на новом устройстве не восстановить.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="grid">
+      <div class="pn card"><div class="lab"><b>02</b>/ шифрование</div><h3>Сквозное</h3><p>X3DH и Double Ratchet для личных чатов, sender keys для групп. Сервер не может прочитать сообщения и файлы.</p></div>
+      <div class="pn card"><div class="lab"><b>03</b>/ доступ</div><h3>Только по ключу</h3><p>Регистрация закрыта. Ключ одноразовый или на группу, у него есть срок действия, и его можно отозвать.</p></div>
+      <div class="pn card"><div class="lab"><b>04</b>/ звонки</div><h3>Голос и видео</h3><p>Личные и групповые звонки с шифрованием кадров. Работают из любой сети: дома, в колледже, по мобильному интернету.</p></div>
+      <div class="pn card"><div class="lab"><b>05</b>/ материалы</div><h3>Всё под рукой</h3><p>Фото, файлы, ссылки и голосовые из каждого чата собраны в «Общих материалах».</p></div>
+    </section>
+
+    <section class="pn">
+      <div class="lab"><b>06</b>/ важно</div>
+      <h2>Это Alpha-версия</h2>
+      <ul class="plain">
+        <li>Возможны ошибки. Если что-то не работает, напишите администратору, который выдал вам ключ.</li>
+        <li>Не передавайте свой ключ другим: он привязан к вашему приглашению, и администратор видит, кто по нему зарегистрировался.</li>
+        <li>Обновления выходят часто. Если приложение попросит обновиться, скачайте новый установщик с этой страницы.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>Secure Messenger · Education · закрытое тестирование</footer>
+</body>
+</html>
